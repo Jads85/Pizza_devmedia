@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JadzPizza</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Baloo|Reenie+Beanie|Roboto:400,500,500i" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>JadzPizza</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sabores</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <ul id="vantagens">
+            <li>Qualidade</li>
+            <li>Sabor</li>
+            <li>Praticidade</li>
+            <li>Agilidade</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Sabores</h2>
+        <p>Conheça os nossos 
+        <strong>5 sabores</strong>
+        de pizza!</p>
+        <img src="img/sabores-pizzas.png" id="pizza-sabores">
+    </section>
+    <section>
+        <h2>Pedido</h2>
+        <form name="pedido" action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Sabor</th>
+                        <th>Quantidade</th>
+                        <th>Preço unidade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="item">
+                        <td>Calabresa</td>
+                        <td>
+                            <a  class="btn-decrementa">-</a>
+                            <input max="9" class="quantidade" value="0" type="number" name="calabresa">
+                            <a  class="btn-incrementa">+</a>
+                        </td>
+                        <td class="preco-item">12.50</td>    
+                    </tr>
+                    <tr class="item">
+                        <td>Mozzarela</td>
+                        <td>
+                            <a class="btn-decrementa"> - </a>
+                            <input max="9" class="quantidade" value="0" type="number" name="mozzarela">
+                            <a class="btn-incrementa"> + </a>
+                        </td>
+                        <td class="preco-item">11.50</td>    
+                    </tr>
+                    <tr class="item">
+                        <td>Pepperoni</td>
+                        <td>
+                            <a class="btn-decrementa"> - </a>
+                            <input max="9" class="quantidade" value="0" type="number" name="pepperoni">
+                            <a class="btn-incrementa"> + </a>
+                        </td>
+                        <td class="preco-item">14.00</td>    
+                    </tr>
+                    <tr class="item">
+                        <td>Portuguesa</td>
+                        <td>
+                            <a class="btn-decrementa"> - </a>
+                            <input max="9" class="quantidade" value="0" type="number" name="portuguesa">
+                            <a class="btn-incrementa"> + </a>
+                        </td>
+                        <td class="preco-item">14.50</td>    
+                    </tr>
+                    <tr class="item">
+                        <td>Alho</td>
+                        <td>
+                            <a class="btn-decrementa"> - </a>
+                            <input max="9" class="quantidade" value="0" type="number" name="alho">
+                            <a class="btn-incrementa"> + </a>
+                        </td>
+                        <td class="preco-item">13.50</td>    
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td id="total">0</td>
+                    </tr>   
+                </tfoot>
+            </table>
+            <input type="submit" value="enviar" >
+        </form>
+    </section>
+    <footer>
+        <a href="#" id="logo-jadzpizza">JadzPizza</a>
+        <p>Todos os direitos reservados &copy; 2021</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
